@@ -8,32 +8,25 @@ import { StyleProvider } from "@/components/ui/StyleProvider";
 export default function Layout() {
   const navItems = [
   {
-    "name": "Services",
-    "href": "#services"
+    "name": "Services",    "href": "#services"
   },
   {
-    "name": "About",
-    "href": "#about"
+    "name": "About",    "href": "#about"
   },
   {
-    "name": "Pricing",
-    "href": "#pricing"
+    "name": "Pricing",    "href": "#pricing"
   },
   {
-    "name": "Reviews",
-    "href": "#testimonials"
+    "name": "Reviews",    "href": "#testimonials"
   },
   {
-    "name": "Hero",
-    "href": "#hero"
+    "name": "Hero",    "href": "#hero"
   },
   {
-    "name": "Metrics",
-    "href": "#metrics"
+    "name": "Metrics",    "href": "#metrics"
   },
   {
-    "name": "Faq",
-    "href": "#faq"
+    "name": "Faq",    "href": "#faq"
   }
 ];
 
@@ -43,10 +36,9 @@ export default function Layout() {
       <SectionErrorBoundary name="navbar">
         <NavbarFloatingLogo
       logo="DogSitDubai"
+      logoImageSrc="http://img.b2bpic.net/free-vector/pet-shop-badges-with-yellow-details_23-2147568768.jpg"
       ctaButton={{
-        text: "Book Now",
-        href: "#contact",
-      }}
+        text: "Book Now",        href: "#contact"}}
      navItems={navItems} />
       </SectionErrorBoundary>
       <main className="flex-grow">
@@ -57,42 +49,28 @@ export default function Layout() {
       brand="DogSitDubai"
       columns={[
         {
-          title: "Company",
-          items: [
+          title: "Company",          items: [
             {
-              label: "About Us",
-              href: "#",
-            },
+              label: "About Us",              href: "#"},
             {
-              label: "Careers",
-              href: "#",
-            },
+              label: "Careers",              href: "#"},
           ],
         },
         {
-          title: "Legal",
-          items: [
+          title: "Legal",          items: [
             {
-              label: "Privacy Policy",
-              href: "#",
-            },
+              label: "Privacy Policy",              href: "#"},
             {
-              label: "Terms",
-              href: "#",
-            },
+              label: "Terms",              href: "#"},
           ],
         },
       ]}
       copyright="© 2024 DogSitDubai. All rights reserved."
       links={[
         {
-          label: "Privacy",
-          href: "#",
-        },
+          label: "Privacy",          href: "#"},
         {
-          label: "Terms",
-          href: "#",
-        },
+          label: "Terms",          href: "#"},
       ]}
     />
       </SectionErrorBoundary>
